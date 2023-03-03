@@ -17,7 +17,7 @@
   },
   "scripts": {
     "tests": "echo \"Error:no test specified\" && exit 1",
-    "parcel:desarrollo": "parcel fuente/index.html",
+    "parcel:desarrollo": "parcel fuente/index.html --public-url './'",
     "parcel:produccion": "parcel build fuente/index.html --public-url './' --dist-dir 'produccion'",
     "limpia": "rimraf dist",
     "des": "npm-run-all limpia parcel:desarrollo",
